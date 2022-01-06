@@ -1,14 +1,13 @@
 // SPDX-License-Identifier: MIT
 
-// simple but effective crowdsourcing application where user can fund and an admin can withdraw those funds to spend on stuff.
-
-pragma solidity >=0.6.6 <0.9.0;
+pragma solidity >=0.6.6 <0.8.0;
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 import "@chainlink/contracts/src/v0.7/vendor/SafeMathChainlink.sol";
 
 contract CrowdSourcing {
     // This is to avoid overflow in the older versions (less than version 8).
+    
     using SafeMathChainlink for uint256;
     
     mapping(address => uint256) public addressToAmountFunded;
@@ -22,7 +21,7 @@ contract CrowdSourcing {
     }
       
     function fund() public payable {
-        uint256 minimumUSD = 1 * 10 ** 18;
+        uint256 minimumUSD = ;
         require(getConversionRate(msg.value) >= minimumUSD, "You need to spend more ETH!");
         addressToAmountFunded[msg.sender] += msg.value;
         funders.push(msg.sender);
@@ -39,7 +38,7 @@ contract CrowdSourcing {
          return uint256(answer * 10000000000);
     }
     
-    // 1000000000
+  
     function getConversionRate(uint256 ethAmount) public view returns (uint256){
         uint256 ethPrice = getPrice();
         uint256 ethAmountInUsd = (ethPrice * ethAmount) / 1000000000000000000;
@@ -53,7 +52,7 @@ contract CrowdSourcing {
     }
 
     function withdraw() payable onlyOwner public {
-       payable(msg.sender).transfer(address(this).balance); 
+       msg.sender.transfer(address(this).balance); 
        for(uint256 funderIndex=0; funderIndex < funders.length; funderIndex++){
            address funder = funders[funderIndex];
            addressToAmountFunded[funder] = 0; 
