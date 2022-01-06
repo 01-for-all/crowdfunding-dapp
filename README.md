@@ -1,4 +1,4 @@
-# CrowdSourcing Smart Contract:
+# CrowdSourcing Dapp:
 
 ## CrowdSourcig Smart contract version 1.0: 
 This ia a simple but effective crowdsourcing Smart Contract where user can fund and an admin can withdraw those funds to spend on stuff.
