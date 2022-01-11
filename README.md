@@ -17,4 +17,4 @@ This ia a simple but effective crowdsourcing Smart Contract where user can fund 
 
 ![Deployed Crowdfunding](deployed-Crowdfunding-SmartContract.png)
 
-### Will Update soon : Crowdfunding Dapp
+### Will Update soon : Front-end soon
