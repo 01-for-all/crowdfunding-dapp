@@ -1,6 +1,6 @@
-# CrowdSourcing Dapp:
+# Crowdfunding Smart Contract:
 
-## CrowdSourcig Smart contract version 1.0: 
+## Crowdfunding Smart contract version 1.0: 
 
 This ia a simple but effective crowdsourcing Smart Contract where user can fund and an admin can withdraw those funds to spend on stuff.
 
@@ -15,6 +15,6 @@ This ia a simple but effective crowdsourcing Smart Contract where user can fund 
 
 ### Deployed Smart Contract:
 
-![Deployed CrowdSourced](deployed-Crowdsourcing-SmartContract.png)
+![Deployed Crowdfunding](deployed-Crowdsourcing-SmartContract.png)
 
-### Will Update soon
+### Will Update soon : Crowdfunding Dapp
