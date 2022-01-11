@@ -1,13 +1,13 @@
 // SPDX-License-Identifier: MIT
 
-// simple but effective crowdsourcing application where user can fund and an admin can withdraw those funds to spend on stuff.
+// simple but effective crowdfunding smart contract where user can fund and an admin can withdraw those funds to spend on stuff.
 
 pragma solidity >=0.6.6 <0.9.0;
 
 import "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol";
 import "@chainlink/contracts/src/v0.7/vendor/SafeMathChainlink.sol";
 
-contract CrowdSourcing {
+contract Crowdfunding {
     // This is to avoid overflow in the older versions (less than version 8).
     using SafeMathChainlink for uint256;
     
