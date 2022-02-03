@@ -2,7 +2,7 @@
 
 ## Crowdfunding Smart contract version 1.0: 
 
-This ia a simple but effective crowdsourcing Smart Contract where user can fund and an admin can withdraw those funds to spend on stuff.
+This ia a simple but effective crowdfunding Smart Contract where user can fund and an admin can withdraw those funds to spend on stuff.
 
 ### About the smart contract:
 
